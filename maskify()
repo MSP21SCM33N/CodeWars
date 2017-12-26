@@ -1,0 +1,16 @@
+def maskify(cc):
+    credit_list = []
+    
+    if len(cc) < 4:
+        '' is None
+        return ''
+    else:
+        for char in cc[:-4]:
+            credit_list.append('#')
+            
+    if len(cc) >= 4:
+        credit_list.append(cc[-4])
+        credit_list.append(cc[-3])
+        credit_list.append(cc[-2])
+        credit_list.append(cc[-1])
+        return "".join(credit_list)
